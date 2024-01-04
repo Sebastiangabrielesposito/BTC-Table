@@ -48,7 +48,7 @@ function App() {
 
 
   const sortedCache : CachedResults[]  =  sortBy(cachedResults, 'btc').reverse()
-  const sortedResults : CachedResults[] = sortBy(Object.keys(offersResult).map(provider => ({
+  const sortedResults  = sortBy(Object.keys(offersResult).map(provider => ({
     provider, 
     btc:offersResult[provider]
   })), 'btc').reverse();
